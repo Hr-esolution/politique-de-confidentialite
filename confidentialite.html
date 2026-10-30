@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Politique de confidentialité de MEDIX, application locale de suivi des traitements et de santé."
+    >
+    <meta name="theme-color" content="#f4f7fb">
+    <title>Politique de confidentialité — MEDIX</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17243b;
+        --muted: #58677e;
+        --blue: #3156c8;
+        --line: #e2e8f1;
+        --surface: #fff;
+        --background: #f4f7fb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(ellipse at 10% 0, #e5edff 0, transparent 38rem),
+          var(--background);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--blue);
+        text-underline-offset: 0.18em;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #8da7ff;
+        outline-offset: 3px;
+        border-radius: 3px;
+      }
+
+      .page {
+        width: min(100% - 2rem, 850px);
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .hero,
+      .policy,
+      .toc {
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        background: var(--surface);
+        box-shadow: 0 14px 40px rgb(34 55 95 / 6%);
+      }
+
+      .hero {
+        padding: clamp(1.5rem, 5vw, 3rem);
+        margin-bottom: 1.25rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.5rem;
+        color: var(--blue);
+        font-size: 0.8rem;
+        font-weight: 750;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.25;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 3.2rem);
+        letter-spacing: -0.04em;
+      }
+
+      .updated {
+        margin: 0.8rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .intro {
+        max-width: 62ch;
+        margin: 1.5rem 0 0;
+        font-size: 1.08rem;
+      }
+
+      .highlight {
+        margin-top: 1.5rem;
+        padding: 1rem 1.1rem;
+        border-left: 4px solid var(--blue);
+        border-radius: 0.5rem;
+        background: #f1f5ff;
+      }
+
+      .toc {
+        padding: 1.25rem clamp(1.25rem, 4vw, 2rem);
+        margin-bottom: 1.25rem;
+      }
+
+      .toc h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.05rem;
+      }
+
+      .toc ol {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        gap: 0.25rem 1.5rem;
+        padding-left: 1.25rem;
+        margin: 0;
+      }
+
+      .policy {
+        padding: clamp(1.25rem, 4vw, 2rem);
+        margin-bottom: 1rem;
+        scroll-margin-top: 1rem;
+      }
+
+      .policy h2 {
+        margin: 0 0 0.8rem;
+        font-size: 1.3rem;
+        letter-spacing: -0.02em;
+      }
+
+      .policy p {
+        margin: 0.65rem 0 0;
+        color: #34445c;
+      }
+
+      .policy ul {
+        padding-left: 1.25rem;
+        margin: 0.65rem 0 0;
+        color: #34445c;
+      }
+
+      .policy li + li {
+        margin-top: 0.45rem;
+      }
+
+      .contact-notice {
+        padding: 0.9rem 1rem;
+        border: 1px solid #f0d7a1;
+        border-radius: 0.7rem;
+        background: #fff9eb;
+      }
+
+      footer {
+        padding: 1rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">MEDIX · Santé et traitements</p>
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">
+          Dernière mise à jour : 29 octobre 2026 · Version 1.0.0
+        </p>
+        <p class="intro">
+          Cette page explique quelles informations vous pouvez enregistrer
+          dans MEDIX, comment l’application les utilise et comment vous pouvez
+          les supprimer. Elle concerne la version actuelle de MEDIX.
+        </p>
+        <div class="highlight">
+          <strong>En bref :</strong> MEDIX est conçue pour fonctionner hors
+          ligne. Vos dossiers et documents sont conservés sur votre appareil ;
+          l’application ne les envoie pas à un serveur MEDIX.
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="Sommaire">
+        <h2>Sommaire</h2>
+        <ol>
+          <li><a href="#informations">Informations enregistrées</a></li>
+          <li><a href="#utilisation">Utilisation des informations</a></li>
+          <li><a href="#acces">Appareil photo, fichiers et notifications</a></li>
+          <li><a href="#stockage">Stockage et sauvegardes</a></li>
+          <li><a href="#suppression">Conservation et suppression</a></li>
+          <li><a href="#protection">Protection des informations</a></li>
+          <li><a href="#sante">Informations de santé</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <section class="policy" id="informations">
+        <h2>1. Informations enregistrées</h2>
+        <p>
+          Selon ce que vous choisissez de saisir, MEDIX peut enregistrer les
+          noms des profils, des dates de naissance facultatives, des mesures de
+          poids et des notes de santé.
+        </p>
+        <p>
+          Les dossiers de traitement peuvent contenir le nom du traitement et
+          du prescripteur, les médicaments, leur forme, leur dosage, leur voie
+          et leurs consignes, les horaires, les changements de statut, ainsi
+          que les prises que vous marquez comme effectuées ou manquées.
+        </p>
+        <p>
+          Vous pouvez également saisir les quantités et dates de péremption des
+          médicaments, le prix des boîtes, des rendez-vous ou examens, ainsi
+          que le nom d’un professionnel, un lieu, un numéro de téléphone et des
+          notes. Les documents que vous choisissez d’importer ou de photographier
+          sont conservés avec leur nom et leurs informations de classement.
+        </p>
+        <p>
+          MEDIX conserve aussi vos préférences d’apparence et de langue, ainsi
+          que l’état d’activation des rappels locaux.
+        </p>
+      </section>
+
+      <section class="policy" id="utilisation">
+        <h2>2. Utilisation des informations</h2>
+        <p>
+          Ces informations servent à afficher et organiser les profils,
+          traitements, médicaments, prises et éléments de suivi que vous
+          saisissez. Elles servent également à programmer les rappels locaux
+          que vous activez.
+        </p>
+        <p>
+          Les estimations de stock sont indicatives et reposent sur les valeurs
+          saisies. MEDIX ne pose pas de diagnostic, ne prescrit pas de
+          traitement et ne modifie pas une prescription.
+        </p>
+      </section>
+
+      <section class="policy" id="acces">
+        <h2>3. Appareil photo, fichiers et notifications</h2>
+        <p>
+          L’appareil photo est utilisé uniquement lorsque vous choisissez de
+          photographier un document. Le sélecteur de fichiers du système
+          accède uniquement au fichier que vous sélectionnez. Les documents
+          sélectionnés sont copiés dans l’espace de stockage privé de MEDIX sur
+          l’appareil.
+        </p>
+        <p>
+          Si vous choisissez un fichier fourni par un service tiers dans le
+          sélecteur du système, ce service peut traiter ce fichier selon ses
+          propres règles. Lorsque vous ouvrez un document avec une autre
+          application, celle-ci peut également y accéder.
+        </p>
+        <p>
+          Les rappels sont des notifications locales programmées sur l’appareil
+          après leur activation et l’autorisation du système. Leur contenu est
+          générique ; leur affichage et leur heure dépendent des réglages et du
+          fonctionnement du système.
+        </p>
+      </section>
+
+      <section class="policy" id="stockage">
+        <h2>4. Stockage et sauvegardes</h2>
+        <p>
+          Les dossiers et documents sont enregistrés dans l’espace privé de
+          l’application sur l’appareil. La version actuelle de MEDIX ne propose
+          pas de compte utilisateur, de synchronisation vers un serveur MEDIX,
+          de publicité ni d’outil intégré de mesure d’audience. MEDIX ne
+          transmet pas ces dossiers à un serveur exploité par MEDIX.
+        </p>
+        <p>
+          Les réglages de sauvegarde du système peuvent toutefois inclure des
+          données de l’application dans une sauvegarde Android ou iCloud/de
+          l’appareil. Ces sauvegardes sont gérées par le système et le compte
+          de l’appareil selon leurs propres réglages et règles. Une suppression
+          dans MEDIX ne supprime pas nécessairement une copie déjà présente
+          dans une sauvegarde système.
+        </p>
+      </section>
+
+      <section class="policy" id="suppression">
+        <h2>5. Conservation et suppression</h2>
+        <p>
+          Les informations restent dans MEDIX jusqu’à ce que vous les
+          supprimiez. Vous pouvez supprimer un document, un traitement ou un
+          profil depuis l’application, ou utiliser
+          <strong>« Supprimer toutes les données locales »</strong> dans les
+          réglages pour effacer les données et préférences enregistrées
+          localement.
+        </p>
+        <p>
+          Les copies présentes dans les sauvegardes du système peuvent être
+          conservées selon les règles d’Apple, de Google ou du fabricant de
+          l’appareil. Gérez ces sauvegardes dans les réglages de votre appareil
+          et de votre compte.
+        </p>
+      </section>
+
+      <section class="policy" id="protection">
+        <h2>6. Protection de vos informations</h2>
+        <p>
+          MEDIX ne possède ni compte utilisateur ni mot de passe d’application.
+          L’accès aux données locales dépend également de la sécurité de votre
+          appareil, de son verrouillage et de vos réglages de sauvegarde.
+          Protégez votre appareil et le compte utilisé pour ses sauvegardes.
+        </p>
+        <p>
+          Si vous enregistrez des informations concernant une autre personne,
+          assurez-vous d’être autorisé à le faire et de l’en informer lorsque
+          cela est approprié.
+        </p>
+      </section>
+
+      <section class="policy" id="sante">
+        <h2>7. Informations de santé</h2>
+        <p>
+          Les informations de santé saisies dans MEDIX sont destinées à vous
+          aider à organiser vos dossiers et à vous souvenir des traitements
+          selon les informations que vous fournissez. Elles ne remplacent pas
+          l’avis d’un médecin, d’un pharmacien ou d’un autre professionnel de
+          santé. En cas de doute ou d’urgence, contactez un professionnel de
+          santé.
+        </p>
+      </section>
+
+      <section class="policy" id="contact">
+        <h2>8. Contact</h2>
+        <p>
+          Pour toute question relative à cette politique ou aux informations
+          enregistrées dans MEDIX, contactez le responsable de l’application :
+        </p>
+        <p>
+          <a href="mailto:medhra@gmail.com">medhra@gmail.com</a>
+        </p>
+      </section>
+
+      <footer>
+        © 2026 MEDIX · Politique de confidentialité
+      </footer>
+    </main>
+  </body>
+</html>
